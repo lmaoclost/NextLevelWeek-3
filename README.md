@@ -90,7 +90,7 @@ Go to the expo page and connect.
 - [Node.js](https://nodejs.org/en/) - Backend framework
 - [React.js](https://reactjs.org/) - JS framework for WEB
 - [React Native](https://facebook.github.io/react-native/) - JS framework for APPs
-- [Knex](https://typeorm.io/) - Typescript ORM
+- [TypeORM](https://typeorm.io/) - Typescript ORM
 - [SQLite](https://www.sqlite.org/index.html) - Database
 - [Expo](https://expo.io/) - Used to improve the app development
 
