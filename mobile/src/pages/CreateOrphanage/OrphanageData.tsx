@@ -13,6 +13,7 @@ import { Feather } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import * as ImagePicker from 'expo-image-picker';
+
 import api from '../../services/api';
 
 interface OrphanageDataRouteParams {
@@ -27,7 +28,7 @@ export default function OrphanageData() {
   const [about, setAbout] = useState('');
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
-  const [open_on_weekends, setOpenWeekends] = useState(true);
+  const [open_on_weekends, setOpenOnWeekends] = useState(true);
   const [images, setImages] = useState<string[]>([]);
 
   const navigation = useNavigation();
@@ -55,7 +56,8 @@ export default function OrphanageData() {
       } as any);
     });
 
-    await api.post('/orphanages', data);
+    await api.post('orphanages', data);
+
     navigation.navigate('OrphanagesMap');
   }
 
@@ -63,7 +65,7 @@ export default function OrphanageData() {
     const { status } = await ImagePicker.requestCameraRollPermissionsAsync();
 
     if (status !== 'granted') {
-      alert('Eita, precisamos de acesso as suas fotos');
+      alert('Eita, precisamos de acesso a suas fotos...');
       return;
     }
 
@@ -106,15 +108,13 @@ export default function OrphanageData() {
 
       <Text style={styles.label}>Fotos</Text>
       <View style={styles.uploadedImagesContainer}>
-        {images.map((image) => {
-          return (
-            <Image
-              key={image}
-              source={{ uri: image }}
-              style={styles.uploadedImage}
-            ></Image>
-          );
-        })}
+        {images.map((image) => (
+          <Image
+            key={image}
+            source={{ uri: image }}
+            style={styles.uploadedImage}
+          />
+        ))}
       </View>
       <TouchableOpacity style={styles.imagesInput} onPress={handleSelectImages}>
         <Feather name="plus" size={24} color="#15B6D6" />
@@ -143,7 +143,7 @@ export default function OrphanageData() {
           thumbColor="#fff"
           trackColor={{ false: '#ccc', true: '#39CC83' }}
           value={open_on_weekends}
-          onValueChange={setOpenWeekends}
+          onValueChange={setOpenOnWeekends}
         />
       </View>
 

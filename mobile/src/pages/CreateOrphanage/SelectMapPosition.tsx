@@ -8,11 +8,11 @@ import MapView, { MapEvent, Marker } from 'react-native-maps';
 import mapMarkerImg from '../../images/map-marker.png';
 
 export default function SelectMapPosition() {
-  const navigation = useNavigation();
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
+  const navigation = useNavigation();
 
   function handleNextStep() {
-    navigation.navigate('OrphanageData', position);
+    navigation.navigate('OrphanageData', { position });
   }
 
   function handleSelectMapPosition(event: MapEvent) {
@@ -23,8 +23,8 @@ export default function SelectMapPosition() {
     <View style={styles.container}>
       <MapView
         initialRegion={{
-          latitude: -27.2092052,
-          longitude: -49.6401092,
+          latitude: -21.753767,
+          longitude: -41.3332902,
           latitudeDelta: 0.008,
           longitudeDelta: 0.008,
         }}
@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 56,
-
     position: 'absolute',
     left: 24,
     right: 24,
