@@ -26,7 +26,7 @@ const OrphanageMap: React.FC = () => {
   }, []);
 
   const navigation = useNavigation();
-  function handleNavigationToOrphanageDetails(id: string) {
+  function handleNavigationToOrphanageDetails(id: number) {
     navigation.navigate('OrphanageDetails', { id });
   }
   function handleNavigateToCreateOrphanage() {
