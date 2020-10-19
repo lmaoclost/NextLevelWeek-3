@@ -1,7 +1,7 @@
 # NextLevelWeek #03
 
 <div align="center">
-  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/logo.jog" width="280"/>
+  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/logo.jpg" width="280"/>
 </div>
 
 <br />
