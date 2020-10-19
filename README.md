@@ -1,7 +1,7 @@
 # NextLevelWeek #03
 
 <div align="center">
-  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/logo.png" width="280"/>
+  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/logo.jog" width="280"/>
 </div>
 
 <br />
@@ -17,7 +17,7 @@
   </a>
 </div>
 
-Project for a [Course](https://nextlevelweek.com/episodios/omnistack/1/edicao/3) that has the purpose to code a project named Happy using Node, ReactJS and React Native. This project connects orphanages and peopple that wants to visit them.
+Project for a [Course](https://github.com/rocketseat-education/nlw-03-omnistack) that has the purpose to code a project named Happy using Node, ReactJS and React Native. This project connects orphanages and peopple that wants to visit them.
 
 ## Some Images
 
