@@ -1,7 +1,7 @@
 # NextLevelWeek #03
 
 <div align="center">
-  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/master/.github/logo.png" width="280"/>
+  <img alt="Happy" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/logo.png" width="280"/>
 </div>
 
 <br />
@@ -25,8 +25,8 @@ Project for a [Course](https://nextlevelweek.com/episodios/omnistack/1/edicao/3)
 
 <div align="center">
   <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/master/.github/web-landing.jpg" width="400px">
-    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/master/.github/web-list.jpg" width="400px">
+    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/web-landing.jpg" width="400px">
+    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/web-list.jpg" width="400px">
   </div>
 </div>
 
@@ -34,8 +34,8 @@ Project for a [Course](https://nextlevelweek.com/episodios/omnistack/1/edicao/3)
 
 <div align="center">
   <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/master/.github/Home-mobile.jpg" width="250px">
-    <img alt="Web" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/master/.github/preview-mobile.jpg" width="250px">
+    <img alt="Mobile" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/Home-mobile.jpg" width="250px">
+    <img alt="Mobile" src="https://github.com/lmaoclost/NextLevelWeek-3/blob/main/.github/preview-mobile.jpg" width="250px">
   </div>
 </div>
 
@@ -70,7 +70,7 @@ $ yarn typeorm migration:run
 $ yarn start
 ```
 
-The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](Insomnia_2020-10-16.json). Make sure that you change the baseURL inside [images_view.ts](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/src/views/images_view.ts) so the images can be displayed correctly in mobile.
+The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/Insomnia_2020-10-16). Make sure that you change the baseURL inside [images_view.ts](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/src/views/images_view.ts) so the images can be displayed correctly in mobile.
 
 ## Day 4, 5: Mobile
 
